@@ -24,12 +24,12 @@ int peek(Node* top)
 }
 int main(void)
 {
-    Node* stack = NULL;
-    stack = push(stack, 1);
-    stack = push(stack, 2);
-    stack = push(stack, 3);
-    stack = pop(stack);
-    stack = pop(stack);
-    printf("%d\n",peek(stack));
+    Node stack;
+    stack = push(&stack, 1);
+    stack = push(&stack, 2);
+    stack = push(&stack, 3);
+    stack = pop(&stack);
+    stack = pop(&stack);
+    printf("%d\n",peek(&stack));
     return 0;
 }
